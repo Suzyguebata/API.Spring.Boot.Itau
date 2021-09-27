@@ -13,7 +13,7 @@ import javax.persistence.Table;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @Entity // esta classe será mapeada no Banco de Dados
-@Table(name = "tb_clientes") // nome da tabela no Banco de Dados
+@Table(name = "tb_cliente") // nome da tabela no Banco de Dados
 public class Cliente {
     
     @Id // essa será a chave primária (PK)

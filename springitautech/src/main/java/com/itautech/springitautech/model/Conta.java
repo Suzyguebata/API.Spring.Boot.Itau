@@ -12,17 +12,17 @@ import javax.persistence.Table;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @Entity
-@Table(name = "tb_contas")
+@Table(name = "tb_conta")
 public class Conta {
     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int conta_id;
+    
+    @Column(name = "conta_numero", length = 10, nullable = false)
     private int conta_numero;
-
     @Column(name = "conta_agencia", length = 10, nullable = false)
     private String conta_agencia;
-    @Column(name = "conta_tipo", length = 1, nullable = false)
-    private String conta_tipo;
     @Column(name = "conta_saldo", nullable = false)
     private double conta_saldo;
 
@@ -31,12 +31,14 @@ public class Conta {
     @JsonIgnoreProperties("contas")
     private Cliente cliente_id;
 
-    /* dúvida?
-    @ManyToOne
-    @JoinColumn(name = "cliente_nome")
-    @JsonIgnoreProperties("conta")
-    private Cliente cliente_nome;
-    */
+    public int getConta_id() {
+        return conta_id;
+    }
+
+    public void setConta_id(int conta_id) {
+        this.conta_id = conta_id;
+    }
+
     public int getConta_numero() {
         return conta_numero;
     }
@@ -51,14 +53,6 @@ public class Conta {
 
     public void setConta_agencia(String conta_agencia) {
         this.conta_agencia = conta_agencia;
-    }
-
-    public String getConta_tipo() {
-        return conta_tipo;
-    }
-
-    public void setConta_tipo(String conta_tipo) {
-        this.conta_tipo = conta_tipo;
     }
 
     public double getConta_saldo() {
