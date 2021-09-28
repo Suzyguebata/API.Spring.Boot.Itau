@@ -24,7 +24,7 @@ public class Conta {
     @Column(name = "conta_agencia", length = 10, nullable = false)
     private String conta_agencia;
     @Column(name = "conta_tipo", length = 1, nullable = false)
-    private String conta_tipo;
+    private int conta_tipo;
     @Column(name = "conta_saldo", nullable = false)
     private double conta_saldo;
 
@@ -57,11 +57,11 @@ public class Conta {
         this.conta_agencia = conta_agencia;
     }
 
-    public String getConta_tipo() {
+    public int getConta_tipo() {
         return conta_tipo;
     }
 
-    public void setConta_tipo(String conta_tipo) {
+    public void setConta_tipo(int conta_tipo) {
         this.conta_tipo = conta_tipo;
     }
     
