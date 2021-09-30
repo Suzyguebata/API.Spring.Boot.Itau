@@ -14,28 +14,29 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@CrossOrigin("*")
 @RequestMapping("/conta")
+@CrossOrigin("*")
 public class ContaController {
-    
     @Autowired
-    private ContaRepo repo;
+    private ContaRepo repo; 
 
-    public ContaController(ContaRepo repo){
-        this.repo = repo;
+    @GetMapping("/all")
+    public List<Conta> obterTodos(){
+        return (List<Conta>) repo.findAll();
     }
 
     @GetMapping("/id/{id}")
-    public List<Conta> obterConta(int id){
-        return (List<Conta>) repo.findAll();
-    }
-    /*public ResponseEntity<Conta> obterConta(@PathVariable long id) {
-        Conta alterarConta = repo.findById(id).orElse(null);
+    public ResponseEntity<Conta> obterCarro(@PathVariable long id) {
+        Conta contaEncontrada = repo.findById(id).orElse(null);
 
-        if (alterarConta != null) {
-            return ResponseEntity.ok(alterarConta);
+        if (contaEncontrada != null) {
+            return ResponseEntity.ok(contaEncontrada);
         } else {
             return ResponseEntity.notFound().build();
         }
-    }*/
+    }
+
 }
+    
+
+
