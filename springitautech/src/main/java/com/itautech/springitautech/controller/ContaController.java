@@ -1,7 +1,9 @@
 package com.itautech.springitautech.controller;
 
+import java.util.List;
+
 import com.itautech.springitautech.model.Conta;
-import com.itautech.springitautech.repository.ContaRepo.ContaRepo;
+import com.itautech.springitautech.repository.ContaRepo;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -19,14 +21,21 @@ public class ContaController {
     @Autowired
     private ContaRepo repo;
 
-    @GetMapping("/id/{id}")
-    public ResponseEntity<Conta> obterConta(@PathVariable long id) {
-        Conta contaEncontradaConta = repo.findById(id).orElse(null);
+    public ContaController(ContaRepo repo){
+        this.repo = repo;
+    }
 
-        if (contaEncontradaConta != null) {
-            return ResponseEntity.ok(contaEncontradaConta);
+    @GetMapping("/id/{id}")
+    public List<Conta> obterConta(int id){
+        return (List<Conta>) repo.findAll();
+    }
+    /*public ResponseEntity<Conta> obterConta(@PathVariable long id) {
+        Conta alterarConta = repo.findById(id).orElse(null);
+
+        if (alterarConta != null) {
+            return ResponseEntity.ok(alterarConta);
         } else {
             return ResponseEntity.notFound().build();
         }
-    }
+    }*/
 }
