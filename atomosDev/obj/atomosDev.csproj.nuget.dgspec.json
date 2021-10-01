@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\temp\\visualStudioCode\\Itau - Formacao Especializacao\\projetoFinalJavaSpring\\atomosDev\\atomosDev.csproj": {}
+    "C:\\temp\\visualStudioCode\\Itau - Formacao Especializacao\\projetoFinalJavaSpring\\api-spring-boot-itautech\\atomosDev\\atomosDev.csproj": {}
   },
   "projects": {
-    "C:\\temp\\visualStudioCode\\Itau - Formacao Especializacao\\projetoFinalJavaSpring\\atomosDev\\atomosDev.csproj": {
+    "C:\\temp\\visualStudioCode\\Itau - Formacao Especializacao\\projetoFinalJavaSpring\\api-spring-boot-itautech\\atomosDev\\atomosDev.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\temp\\visualStudioCode\\Itau - Formacao Especializacao\\projetoFinalJavaSpring\\atomosDev\\atomosDev.csproj",
+        "projectUniqueName": "C:\\temp\\visualStudioCode\\Itau - Formacao Especializacao\\projetoFinalJavaSpring\\api-spring-boot-itautech\\atomosDev\\atomosDev.csproj",
         "projectName": "atomosDev",
-        "projectPath": "C:\\temp\\visualStudioCode\\Itau - Formacao Especializacao\\projetoFinalJavaSpring\\atomosDev\\atomosDev.csproj",
+        "projectPath": "C:\\temp\\visualStudioCode\\Itau - Formacao Especializacao\\projetoFinalJavaSpring\\api-spring-boot-itautech\\atomosDev\\atomosDev.csproj",
         "packagesPath": "C:\\Users\\assen\\.nuget\\packages\\",
-        "outputPath": "C:\\temp\\visualStudioCode\\Itau - Formacao Especializacao\\projetoFinalJavaSpring\\atomosDev\\obj\\",
+        "outputPath": "C:\\temp\\visualStudioCode\\Itau - Formacao Especializacao\\projetoFinalJavaSpring\\api-spring-boot-itautech\\atomosDev\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\assen\\AppData\\Roaming\\NuGet\\NuGet.Config"

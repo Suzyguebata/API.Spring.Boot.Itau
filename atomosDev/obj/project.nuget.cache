@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yLQByRjoA/EOtNh3CJYB82eo9485jxzLVupZUReGav6mADyd4BF05Co/y020gUjc7uv4UZ5oJfYlxoWkD8e4tA==",
+  "dgSpecHash": "X4MwzrnkKiJrTPKstz06EXO+u5N1w+fKS0/YAZ4R4xNWY8XLfjXiV+IsAmD1nOToJgFxID4sbfce0Dxws+h2jQ==",
   "success": true,
-  "projectFilePath": "C:\\temp\\visualStudioCode\\Itau - Formacao Especializacao\\projetoFinalJavaSpring\\atomosDev\\atomosDev.csproj",
+  "projectFilePath": "C:\\temp\\visualStudioCode\\Itau - Formacao Especializacao\\projetoFinalJavaSpring\\api-spring-boot-itautech\\atomosDev\\atomosDev.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

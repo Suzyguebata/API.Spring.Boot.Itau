@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\temp\\visualStudioCode\\Itau - Formacao Especializacao\\projetoFinalJavaSpring\\atomosDev\\atomosDev.csproj",
+  "FilePath": "c:\\temp\\visualStudioCode\\Itau - Formacao Especializacao\\projetoFinalJavaSpring\\api-spring-boot-itautech\\atomosDev\\atomosDev.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "5.0",
@@ -15619,43 +15619,43 @@
   "RootNamespace": "atomosDev",
   "Documents": [
     {
-      "FilePath": "c:\\temp\\visualStudioCode\\Itau - Formacao Especializacao\\projetoFinalJavaSpring\\atomosDev\\Views\\_ViewStart.cshtml",
-      "TargetPath": "Views\\_ViewStart.cshtml",
+      "FilePath": "c:\\temp\\visualStudioCode\\Itau - Formacao Especializacao\\projetoFinalJavaSpring\\api-spring-boot-itautech\\atomosDev\\Views\\Home\\Privacy.cshtml",
+      "TargetPath": "Views\\Home\\Privacy.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\temp\\visualStudioCode\\Itau - Formacao Especializacao\\projetoFinalJavaSpring\\atomosDev\\Views\\Home\\Index.cshtml",
-      "TargetPath": "Views\\Home\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\temp\\visualStudioCode\\Itau - Formacao Especializacao\\projetoFinalJavaSpring\\atomosDev\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\temp\\visualStudioCode\\Itau - Formacao Especializacao\\projetoFinalJavaSpring\\atomosDev\\Views\\Conta\\AllContas.cshtml",
-      "TargetPath": "Views\\Conta\\AllContas.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\temp\\visualStudioCode\\Itau - Formacao Especializacao\\projetoFinalJavaSpring\\atomosDev\\Views\\Shared\\Error.cshtml",
-      "TargetPath": "Views\\Shared\\Error.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\temp\\visualStudioCode\\Itau - Formacao Especializacao\\projetoFinalJavaSpring\\atomosDev\\Views\\Shared\\_Layout.cshtml",
-      "TargetPath": "Views\\Shared\\_Layout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\temp\\visualStudioCode\\Itau - Formacao Especializacao\\projetoFinalJavaSpring\\atomosDev\\Views\\_ViewImports.cshtml",
+      "FilePath": "c:\\temp\\visualStudioCode\\Itau - Formacao Especializacao\\projetoFinalJavaSpring\\api-spring-boot-itautech\\atomosDev\\Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\temp\\visualStudioCode\\Itau - Formacao Especializacao\\projetoFinalJavaSpring\\atomosDev\\Views\\Home\\Privacy.cshtml",
-      "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FilePath": "c:\\temp\\visualStudioCode\\Itau - Formacao Especializacao\\projetoFinalJavaSpring\\api-spring-boot-itautech\\atomosDev\\Views\\Shared\\_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\temp\\visualStudioCode\\Itau - Formacao Especializacao\\projetoFinalJavaSpring\\api-spring-boot-itautech\\atomosDev\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\temp\\visualStudioCode\\Itau - Formacao Especializacao\\projetoFinalJavaSpring\\api-spring-boot-itautech\\atomosDev\\Views\\_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\temp\\visualStudioCode\\Itau - Formacao Especializacao\\projetoFinalJavaSpring\\api-spring-boot-itautech\\atomosDev\\Views\\Conta\\GetContaPorID.cshtml",
+      "TargetPath": "Views\\Conta\\GetContaPorID.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\temp\\visualStudioCode\\Itau - Formacao Especializacao\\projetoFinalJavaSpring\\api-spring-boot-itautech\\atomosDev\\Views\\Home\\Index.cshtml",
+      "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\temp\\visualStudioCode\\Itau - Formacao Especializacao\\projetoFinalJavaSpring\\api-spring-boot-itautech\\atomosDev\\Views\\Conta\\AllContas.cshtml",
+      "TargetPath": "Views\\Conta\\AllContas.cshtml",
       "FileKind": "mvc"
     }
   ],

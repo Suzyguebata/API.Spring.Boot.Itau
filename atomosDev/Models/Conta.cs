@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace atomosDev.Models
 {
@@ -19,9 +20,10 @@ namespace atomosDev.Models
     public class Conta
     {
         public int id {get;set;}
+        public int tipo {get;set;}
         public int agencia {get;set;}
         public string conta {get;set;}
         public double saldo {get;set;}   
-        public string nome {get;set;}     
+        public virtual Cliente titular_da_conta {get;set;}
     }
 }

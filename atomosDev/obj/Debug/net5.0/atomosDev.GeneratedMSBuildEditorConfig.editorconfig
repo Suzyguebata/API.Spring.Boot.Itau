@@ -7,4 +7,4 @@ build_property.PublishSingleFile =
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
 build_property.RootNamespace = atomosDev
-build_property.ProjectDir = c:\temp\visualStudioCode\Itau - Formacao Especializacao\projetoFinalJavaSpring\atomosDev\
+build_property.ProjectDir = c:\temp\visualStudioCode\Itau - Formacao Especializacao\projetoFinalJavaSpring\api-spring-boot-itautech\atomosDev\

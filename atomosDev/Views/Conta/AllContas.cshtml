@@ -1,25 +1,38 @@
-@model IEnumerable<Conta>
+@model List<Cliente>
+@using atomosDev.Models
 
 <h1>Consulte as contas</h1>
-</hr>
-<table class="table table-hover">
-    <thead>
+<hr>
+@foreach (Cliente clientes in Model)
+{
+    <h4>Titular da Conta: @clientes.nome</h4>
+    <table class="table table-striped table-hover">
+        <thead>
         <th scope="col">Id</th>
+        <th scope="col">Tipo de Conta</th>
         <th scope="col">Agencia</th>
         <th scope="col">Conta</th>
         <th scope="col">Saldo</th>
-        <th scope="col">Titular da Conta</th>
     </thead>
     <tbody>
-        @foreach (Conta contas in Model)
+        @foreach (Conta contas in clientes.contas)
         {
             <tr>
                 <td>@contas.id</td>
+                <td>
+                    @switch(contas.tipo)
+                    {
+                        case 0: <text>Conta Corrente</text>; break;
+                        case 1: <text>Conta Poupança</text>; break;
+                        case 2: <text>Conta Investimento</text>; break;
+                    }
+                </td>
                 <td>@contas.agencia</td>
                 <td>@contas.conta</td>
-                <td>@contas.saldo</td>
-                <td>@contas.nome</td>
+                <td>R$ @contas.saldo.ToString("n")</td>
             </tr>
         }
     </tbody>
-</table>
+    </table>
+
+}
