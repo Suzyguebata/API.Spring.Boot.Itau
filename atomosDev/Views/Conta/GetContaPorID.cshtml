@@ -1,0 +1,50 @@
+@model Conta
+
+@using atomosDev.Models
+
+<h3>Dados de uma conta</h3>
+<hr>
+<form>
+    <label >ID da Conta</label>
+    <input type="number" id="id" name="id">
+    <input type="submit" value="Procurar" formmethod="POST">
+</form>
+
+@if(Model!=null)
+{
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <label><b>Tipo de Conta: </b>
+                @switch(@Model.tipo)
+                {
+                    case 0: <text>Conta Corrente</text>; break;
+                    case 1: <text>Conta Poupança</text>; break;
+                    case 2: <text>Conta Investimento</text>; break;
+                }
+                </label>
+            </div>
+            <div class="col-12">
+                <label><b>Agencia: </b>@Model.agencia</label>
+            </div>
+            <div class="col-12">
+                <label><b>Conta: </b>@Model.conta</label>
+            </div>
+            <div class="col-12">
+                <label><b>Saldo: R$ </b>@Model.saldo.ToString("n")</label>
+            </div>
+            <div class="col-12">
+                <label><b>Titular da Conta: </b>@Model.titular_da_conta.nome</label>
+            </div>
+            <div class="col-12">
+                <label><b>CPF: </b>@Model.titular_da_conta.cpf</label>
+            </div>
+            <div class="col-12">
+                <label><b>Telefone: </b>@Model.titular_da_conta.telefone</label>
+            </div>
+            <div class="col-12">
+                <label><b>Email: </b>@Model.titular_da_conta.email</label>
+            </div>
+        </div>
+    </div>
+}
