@@ -24,10 +24,10 @@ alt="fonts" border= "0">
 </p>
 <p align="left">Banco de Dados: 
 </p>
-<img alt="MySQL Icon" src="img/mysql.svg" width="15px" /> &nbsp;
+<img alt="MySQL Icon" src="img/mysql.svg" width="35px" /> &nbsp;
 <p align="left">API: 
 </p>
-<img alt="Spring Boot Icon" src="img/spingboot.png" width="30px" /> &nbsp;
+<img alt="Spring Boot Icon" src="img/spingboot.png" width="50px" /> &nbsp;
 <p align="left">Modelagem de Dados:
 </p>
 <p align="left">Todo cliente possui os seguintes dados para serem cadastrados
