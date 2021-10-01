@@ -1,3 +1,6 @@
+<h3 align="left">
+<img alt="Átomos Dev Icon" src="img/atomosDev.png" width="50px" /> &nbsp;
+<img src="https://fontmeme.com/permalink/211001/6042e20110b46ec8dd51c5b81b5aa76e.png" alt="fonts" border="0">
 <h3 align="center">
 <img src="https://fontmeme.com/permalink/211001/6042e20110b46ec8dd51c5b81b5aa76e.png" alt="fonts" border="0">
 <h3 align = "left">
