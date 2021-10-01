@@ -18,15 +18,15 @@ import org.springframework.web.bind.annotation.RestController;
 @CrossOrigin("*")
 public class ContaController {
     @Autowired
-    private ContaRepo repo; 
+    private ContaRepo repo;
 
     @GetMapping("/all")
-    public List<Conta> obterTodos(){
+    public List<Conta> obterTodos() {
         return (List<Conta>) repo.findAll();
     }
 
     @GetMapping("/id/{id}")
-    public ResponseEntity<Conta> obterCarro(@PathVariable long id) {
+    public ResponseEntity<Conta> obterConta(@PathVariable long id) {
         Conta contaEncontrada = repo.findById(id).orElse(null);
 
         if (contaEncontrada != null) {
@@ -37,6 +37,3 @@ public class ContaController {
     }
 
 }
-    
-
-

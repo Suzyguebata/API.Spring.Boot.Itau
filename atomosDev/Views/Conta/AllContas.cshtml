@@ -1,0 +1,25 @@
+@model IEnumerable<Conta>
+
+<h1>Consulte as contas</h1>
+</hr>
+<table class="table table-hover">
+    <thead>
+        <th scope="col">Id</th>
+        <th scope="col">Agencia</th>
+        <th scope="col">Conta</th>
+        <th scope="col">Saldo</th>
+        <th scope="col">Titular da Conta</th>
+    </thead>
+    <tbody>
+        @foreach (Conta contas in Model)
+        {
+            <tr>
+                <td>@contas.id</td>
+                <td>@contas.agencia</td>
+                <td>@contas.conta</td>
+                <td>@contas.saldo</td>
+                <td>@contas.nome</td>
+            </tr>
+        }
+    </tbody>
+</table>
