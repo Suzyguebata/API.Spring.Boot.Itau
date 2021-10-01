@@ -15,13 +15,23 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
+                <label><b>Tipo de Conta: </b>
+                @switch(@Model.tipo)
+                {
+                    case 0: <text>Conta Corrente</text>; break;
+                    case 1: <text>Conta Poupança</text>; break;
+                    case 2: <text>Conta Investimento</text>; break;
+                }
+                </label>
+            </div>
+            <div class="col-12">
                 <label><b>Agencia: </b>@Model.agencia</label>
             </div>
             <div class="col-12">
                 <label><b>Conta: </b>@Model.conta</label>
             </div>
             <div class="col-12">
-                <label><b>Saldo: </b>@Model.saldo.ToString("n")</label>
+                <label><b>Saldo: R$ </b>@Model.saldo.ToString("n")</label>
             </div>
             <div class="col-12">
                 <label><b>Titular da Conta: </b>@Model.titular_da_conta.nome</label>
