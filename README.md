@@ -31,18 +31,28 @@ alt="fonts" border= "0">
 <p align="left">Modelagem de Dados:
 </p>
 <p align="left">Todo cliente possui os seguintes dados para serem cadastrados
-●codigo interno
-●nome
-●cpf
-●telefone
-●email
+</p>
+<p align="left">✔ codigo interno
+</p>
+<p align="left">✔ nome
+</p>
+<p align="left">✔ cpf
+</p>
+<p align="left">✔ telefone
+</p>
+<p align="left">✔ email
 </p>
 <p align="left">Toda conta bancária possui os seguintes dados
-●numero
-●agência
-●tipo da conta (0 - conta corrente, 1 - poupança, 2 - investimento)
-●saldo
-●titular da conta
+</p>
+<p align="left">✔ numero
+</p>
+<p align="left">✔ agência
+</p>
+<p align="left">✔ tipo da conta (0 - conta corrente, 1 - poupança, 2 - investimento)
+</p>
+<p align="left">✔ saldo
+</p>
+<p align="left">✔ titular da conta
 </p>
 <br>
 <h3 align = "left">
