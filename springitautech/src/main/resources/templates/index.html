@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head> 
+    <title>Itaú Tech</title> 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+    <h2>Lista de Contas</h2>
+  <div th:unless="${#lists.isEmpty(Conta)}">
+    <dl th:each="Conta : ${Conta}">
+      <dt class="contaCliente">
+        <span th:text="${Conta.conta}">Conta</span> by <span
+              th:text="${Conta.agencia}">Agência</span> (saldo: <span
+              th:text="${Conta.saldo}">saldo</span>)
+
+</body>
+</html>

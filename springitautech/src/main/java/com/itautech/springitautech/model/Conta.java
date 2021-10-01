@@ -9,75 +9,75 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-
 @Entity
-@Table(name = "tb_conta")
+@Table (name = "tb_conta")
 public class Conta {
     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int conta_id;
+    private long id;
 
-    @Column(name = "conta_numero", length = 10, nullable = false)
-    private int conta_numero;
-    @Column(name = "conta_agencia", length = 10, nullable = false)
-    private String conta_agencia;
-    @Column(name = "conta_tipo", length = 1, nullable = false)
-    private int conta_tipo;
-    @Column(name = "conta_saldo", nullable = false)
-    private double conta_saldo;
+    @Column(name = "agencia", length = 8, nullable = false)
+    private int agencia;
+    
+    @Column(name = "conta", length = 15, nullable = false, unique = true)
+    private String conta;
+
+    @Column(name = "saldo", length = 200, nullable = false)
+    private double saldo;
+
+    @Column(name = "tipo_da_conta", length = 100, nullable = false)
+    private int tipo_da_conta;
 
     @ManyToOne
-    @JoinColumn(name = "cliente_id")
-    @JsonIgnoreProperties("contas")
-    private Cliente cliente_id;
+    @JoinColumn(name = "titular_da_conta")
+    private Cliente titular_da_conta;
 
-    public int getConta_id() {
-        return conta_id;
-    }
-
-    public void setConta_id(int conta_id) {
-        this.conta_id = conta_id;
+    public long getId() {
+        return id;
     }
 
-    public int getConta_numero() {
-        return conta_numero;
+    public void setId(long id) {
+        this.id = id;
     }
 
-    public void setConta_numero(int conta_numero) {
-        this.conta_numero = conta_numero;
-    }
-    
-    public String getConta_agencia() {
-        return conta_agencia;
+    public int getAgencia() {
+        return agencia;
     }
 
-    public void setConta_agencia(String conta_agencia) {
-        this.conta_agencia = conta_agencia;
+    public void setAgencia(int agencia) {
+        this.agencia = agencia;
     }
 
-    public int getConta_tipo() {
-        return conta_tipo;
+    public String getConta() {
+        return conta;
     }
 
-    public void setConta_tipo(int conta_tipo) {
-        this.conta_tipo = conta_tipo;
-    }
-    
-    public double getConta_saldo() {
-        return conta_saldo;
+    public void setConta(String conta) {
+        this.conta = conta;
     }
 
-    public void setConta_saldo(double conta_saldo) {
-        this.conta_saldo = conta_saldo;
+    public double getSaldo() {
+        return saldo;
     }
 
-    public Cliente getCliente_id() {
-        return cliente_id;
+    public void setSaldo(double saldo) {
+        this.saldo = saldo;
     }
 
-    public void setCliente_id(Cliente cliente_id) {
-        this.cliente_id = cliente_id;
+    public int getTipo() {
+        return tipo_da_conta;
+    }
+
+    public void setTipo(int tipo_da_conta) {
+        this.tipo_da_conta = tipo_da_conta;
+    }
+
+    public Cliente getTitular_da_conta() {
+        return titular_da_conta;
+    }
+
+    public void setTitular_da_conta(Cliente titular_da_conta) {
+        this.titular_da_conta = titular_da_conta;
     }
 }
