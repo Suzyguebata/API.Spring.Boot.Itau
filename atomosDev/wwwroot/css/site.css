@@ -106,7 +106,7 @@ table {
 
 .sobre_conteudoFoto {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 2.5rem;
   justify-items: center;
 }
@@ -127,7 +127,7 @@ table {
   height: 0;
   background-color: rgba(0, 0, 0, 0.2);
   transition: height 2s ease-in-out;
-  color: var(--contraste-color);
+  color: orangered;
 }
 
 .linkedin h2 {
@@ -155,7 +155,7 @@ table {
 }
 
 .game-card {
-  width: 100%;
+  width: 80%;
   border-radius: .5rem;
   overflow: hidden;
   background-color: white;
@@ -179,8 +179,10 @@ table {
 }
 
 .next-release-card {
-  border: 2px solid orange;
+  border: 3px solid;
+  border-image: linear-gradient(135deg, orange 0%, blue 100%) 1;
   background-color: white;
+  border-radius: 15px;
 }
 
 .conteudo-sobre {
@@ -199,6 +201,7 @@ body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
 }
+
 .footer {
   position: absolute;
   bottom: 0;
