@@ -1,11 +1,11 @@
 @model List<Cliente>
 @using atomosDev.Models
 
-<h1>Consulte as contas</h1>
+<h3 class="display-5">Consulte as contas</h3>
 <hr>
 @foreach (Cliente clientes in Model)
 {
-    <h4>Titular da Conta: @clientes.nome</h4>
+    <h5 class="display-5">Titular da Conta: @clientes.nome</h5>
     <table class="table table-striped table-hover">
         <thead>
         <th scope="col">Id</th>
@@ -34,5 +34,4 @@
         }
     </tbody>
     </table>
-
 }
